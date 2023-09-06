@@ -1,0 +1,502 @@
+*{  
+      margin: 0;
+      padding: 0;
+       box-sizing: border-box;
+       font-family: 'poppins', sans-serif;
+
+}
+    body{
+         color: #ededed;
+               background: #0b2539;
+    }
+     .header{
+         position : fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         padding: 20px 10%;
+          background: rgb(2, 25, 45); 
+           display: flex;
+            justify-content: space-between;
+            align-items:center;
+            z-index: 100;
+
+     }
+      .logo{
+           position: relative;
+            font-size: 25px;
+            color: #fff;
+            text-decoration:none ;
+             font-weight: 600;
+                cursor: default;
+              opacity:0;
+               animation: slideRight is ease forwards ;
+
+      }
+         .navbar a{
+              display: inline-block;
+               font-size: 25px;
+               color: #fff;
+               text-decoration: none;
+                font-weight:500;
+                 margin-left:35px;
+                  transition: .3s;
+                  opacity: 0;
+                  animation: slideTop .5s ease forwards;
+                  animation-delay: calc(.2s * var(--i));
+
+
+         }
+           .navbar a:hover{
+            color: turquoise;
+
+
+           }
+             .home{
+                   position: relative;
+                   width: 100%;
+                   justify-content: space-between;
+                   height:100vh;
+                    background: url(https://img.freepik.com/free-photo/solid-navy-blue-concrete-textured-wall_53876-124584.jpg?w=900&t=st=1691961515~exp=1691962115~hmac=94c79a1ce3999da6da99824c1f046d1754382a7722f680b358b13adadc364e2b) no-repeat;
+                     background-size: cover;
+                     display: flex;
+                     align-items: center;
+                      padding: 70px 10%;
+
+
+             }
+             .home-content{
+                max-width: 600px;
+
+             }
+                 .home-content h3{
+                    font-size: 32px;
+                    font-weight: 700;
+                     opacity:0;
+                      animation: slideBottom 1s ease forwards;
+                      animation-delay: .7s;
+    
+                    
+                 }
+                 .home-content h3:nth-of-type(2){
+                    margin-bottom: 30px;
+                    animation: slideTop 1s ease forwards;
+                    animation-delay: .7s;
+                 }
+                 .home-content h3 span{
+                     color:turquoise;
+                 }
+                    
+                 .home-content h1{
+                    font-size: 56px;
+                    font-weight: 700;
+                    margin: -3px 0;
+                   /* opacity: 0;
+                    animation: sildeRight 1s ease forwards;
+                    animation-delay:  1s ;*/
+
+
+
+                 }
+                  .home-content p{
+                    font-size: 25px;
+                    opacity: 0;
+                   animation: slideLeft 1s ease forwards ;
+                    animation-delay: 1s;
+
+
+                  }
+                   .devPic img{
+                       height: 60vh;
+                       
+
+                   }
+                   .home-sci a{
+                    display:inline-flex ;
+                     justify-content: center;
+                     align-items:center ;
+                     width: 40px;
+                     height: 40px;
+                     background: transparent;
+                     border: 2px solid turquoise;
+                     border-radius: 50% ;
+                      font-size: 20px;
+                      color:turquoise;
+                      text-decoration: none;
+                         transition: .5s ease;
+                          opacity: 0;
+                            animation: slideLeft 1s ease forwards;
+                             animation-delay: calc(.2s * var(--i));
+                         margin: 30px 15px 30px 0;
+                   }
+                   .home-sci a:hover{
+                      background: turquoise;
+                      background-color: black;
+
+
+                       box-shadow: 0 0 20px turquoise;
+                       
+
+                   }
+                   .btn-box{
+                    display: inline-block;
+                    padding: 12px 28px;
+                     background: rgb(20, 205, 212);
+                  
+                     border-radius:  40px;
+                     font-size: 16px;
+                      color: black;
+                      letter-spacing: 1px ;
+                       text-decoration: none;
+                        font-weight: 600;
+                        opacity: 0;
+                        animation: slideTop 1s ease forwards;
+                         animation-delay: 2s;
+                          box-shadow:0 0 5px turquoise,
+                            0 0 25px turquoise
+
+             }
+                  .btn-box:hover{
+                      box-shadow:0 0 5px cyan,
+                      0 0 20px cyan, 0 0 10px cyan,
+                      0 0 50px cyan, 0 0 200px cyan;
+                  }
+                     .about{
+                      display: grid;
+                      grid-template-columns:repeat(2,1fr) ;
+                      align-items: center;
+                       gap: 1.5rem;
+
+                     }
+                           .about-img img{
+                              padding-bottom: 20%;
+                               max-width: 630px;
+                                height: auto;
+                                 width: 100%;
+                                  border-radius: 8px;
+                                   
+                           }
+                             .about-text h2{
+                                 font-size: 60px;
+
+
+                              
+                             }
+                                 .about-text h2 span{
+                                  color: turquoise;
+                                    
+                                 }
+                                   .about-text h4{
+                                    font-size: 29px;
+                                    font-weight: 600;
+                                    color: white;
+                                      line-height: 1.7;
+                                      margin:15px 0 30px;
+                                   }
+                                     .about-text p{
+                                        color:white;
+                                        font-size: 20px;
+                                        line-height: 1.4;
+                                        margin-bottom: 4rem;
+                                     }
+                                     .about-text h{
+                                          font-size: 20px;
+                                          font-weight: 600;
+                                          margin-top: 2rem;
+                                          line-height: 2.8; 
+                                         
+                                     }
+                                      #projects{
+                                        color: aliceblue;
+                                        font-size: 20px;
+                                        line-height: 1.4;
+                                        margin-bottom: 4rem;
+                                      }
+                                      .sub-title{
+                                         text-align: center;
+                                         font-size: 40px;
+                                         padding-bottom: 70px;
+                                      }
+                                      .sub-title span{
+                                         color: turquoise;
+                                      }
+                                        .container{
+                                          padding: 90px;
+
+                                        }
+                                          .projects-list{
+                                            display: grid;
+                                            grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+                                            grid-gap:40px;
+                                            margin-top: 50px;
+                                          }
+                                          .projects-list div{
+                                            background-color: transparent;
+                                            padding: 40px;
+                                            font-size: 18px;
+                                            font-weight: 13px;
+                                            border-right: 10px;
+                                            border-radius: 20px;
+                                             transition: background 0.5s,transform 0.5;
+                                             box-shadow: 1px 1px 20px rgb(18, 62, 116),
+                                                        1px 11px 40px rgb(19, 60, 110);
+
+                                          }
+                                                .projects-list div h2{
+                                                font-weight: 400;
+                                                font-size: 25px;
+                                                margin-bottom: 15px;
+                                                color: rgb(49, 182, 222);
+                                              }
+                                              .projects-list div a{
+                                                text-decoration: dashed;
+                                                color: rgb(0, 0, 0);
+                                                font-size: 12px;
+                                                
+                                                margin-top: 20px;
+                                                display: inline-block;
+                                              }
+                                                .read{
+                                                   display: inline-block;
+                                                   padding: 12px 28px;
+                                                   background: turquoise;
+                                                   border-radius: 40px;
+                                                   font-size: 16px;
+                                                   color: black;
+                                                   /*letter-spacing: 1px;*/
+                                                     text-decoration: none;
+                                                     font-weight: 600;
+                                                      opacity: 0;
+                                                      animation: slideTop 1s ease forwards;
+                                                         animation-delay: 2s;
+                                                         box-shadow:0 0 5px turquoise,
+                                                         0 0 25px turquoise;
+
+                                                }
+                                                .read:hover{
+                                                  box-shadow:0 0 5px cyan,
+                                                    0 0 20px cyan, 0 0 10px cyan,
+                                                    0 0 50px cyan, 0 0 200px cyan;
+                                                }
+                                                .projects-list div:hover{
+                                                  transform: translateY(-10px);
+
+                                                }
+                                                #skills{
+                                                  color: aliceblue;
+                                                  font-size: 20px;
+                                                  line-height: 1.4;
+                                                  margin-bottom: 4rem;
+                                                }
+                                                .container1{
+                                                  padding: 90px;
+        
+                                                }
+                                                .my-skills-list{
+                                                  display: grid;
+                                                  grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+                                                  grid-gap:50px;
+                                                  margin-top: 50px;
+                                                }
+                                                .my-skills-list div{
+                                                  background-color: transparent;
+                                                  padding: 40px;
+                                                  font-size: 18px;
+                                                  font-weight: 13px;
+                                                  border-right: 10px;
+                                                  border-radius: 20px;
+                                                   transition: background 0.5s,transform 0.5;
+                                                   box-shadow: 1px 1px 20px rgb(18, 62, 116),
+                                                              1px 11px 40px rgb(19, 60, 110);
+      
+                                                }
+                                                .my-skills-list div h2{
+                                                  font-weight: 400;
+                                                  font-size: 25px;
+                                                  margin-bottom: 15px;
+                                                  color: rgb(49, 182, 222);
+                                                }
+                                                .my-skills-list div:hover{
+                                                  transform: translateY(-10px);
+
+                                                }
+                                                .contact{
+                                                  display: grid;
+                                                  grid-template-columns: repeat(2,1fr);
+                                                  align-items: center;
+                                                  gap: 3rem;
+                                                  padding-left: 30px;
+                                                  margin-top: 130px;
+                                                }
+                                                .contact-text h2{
+                                                  font-size: 40px;
+                                                  line-height: 1;
+                                                  text-align: center;
+
+                                                }
+                                                  .contact-text h2 span{
+                                                      color: turquoise;
+                                                  }
+                                                     .contact-text h4{
+                                                      margin: 15px 0;
+                                                      color: yellow;
+                                                      font-size: 20px;
+                                                      font-weight: 600;
+                                                     }
+                                                       .contact-list{
+                                                        margin-bottom: 3rem;
+
+                                                       }
+                                                        .contact-list li{
+                                                          margin-bottom: 10px;
+                                                          display: block;
+
+                                                        }
+                                                        .contact-list li{
+                                                          margin-bottom: 10px;
+                                                          display: block;
+
+                                                        }
+                                                        .contact-list svg{
+                                                          display: inline-block;
+                                                          color: turquoise;
+                                                          font-size: 20px;
+                                                          font-weight: 600;
+                                                          
+                                                        }
+                                                           .contact{
+                                                            display: grid;
+                                                            grid-template-columns: repeat(2,1fr);
+                                                            align-items: center;
+                                                            gap: 3rem;
+                                                            padding-left:30px ;
+                                                            margin-top: 130px;
+
+                                                           }
+                                                            .contact-text h2 span{
+                                                              color: turquoise;
+
+                                                            }
+                                                             .contact-text h4{
+                                                              margin:15px 0;
+                                                               color: antiquewhite;
+                                                               font-size: 20px;
+                                                               font-weight: 600;
+
+                                                             }
+                                                               .contact-text p{
+                                                                 color: rgb(23, 21, 21);
+                                                                  font-size:2;
+                                                                  line-height: 30px;
+                                                                  margin-bottom: 2rem;
+
+
+                                                               }
+                                                                 .contact-form form{
+                                                                  position:relative;
+
+                                                                 }
+                                                                    .contact-form form input, form textarea{
+                                                                        border: none;
+                                                                        outline: none;
+                                                                        width: 90%;
+                                                                        padding: 18px;
+                                                                        background:   rgb(188, 169, 169);
+                                                                         color: black;
+                                                                         font-size: 1rem;
+                                                                          font-weight: 600;
+                                                                          margin-bottom: 0.5rem;
+                                                                           border-radius:0.5rem;
+
+
+
+                                                                    }
+                                                                     .contact-form textarea{
+                                                                      resize: none;
+                                                                      height: 220px;
+
+                                                                     }
+                                                                        .contact-form form .send{
+                                                                          display: inline-block;
+                                                                        padding: 14px 60px;
+                                                                        background: turquoise;
+                                                                              border-radius: 40px;
+                                                                         font-size: 16px;
+                                                                         color: black;
+                                                                               /*letter-spacing: 1px;*/
+                                                                                text-decoration: none;
+                                                                        font-weight: 600;
+                                                                             opacity: 0;
+                                                                              animation: slideTop 1s ease forwards;
+                                                                             animation-delay: 2s;
+                                                                            box-shadow:0 0 5px turquoise,
+                                                                              0 0 25px turquoise;
+
+                                                                        }
+                                                                          .contact-form form .send:hover{
+                                                                            box-shadow:0 0 5px cyan,
+                                                    0 0 20px cyan, 0 0 10px cyan,
+                                                    0 0 50px cyan, 0 0 200px cyan;
+                                                                          }
+                                                               
+
+                                                    
+                                                  
+                                                
+                   
+
+
+
+
+                            
+                  @keyframes slideRight{
+                    0%{
+                          transform: translateX(-100px);
+
+                           opacity: 0;
+
+                    }
+                        100%{
+                            transform: translateX(0px);
+                             opacity: 1;
+
+                        }
+                   }
+                   @keyframes slideLeft{
+                    0%{
+                          transform: translateX(100px);
+                           opacity: 0;
+
+                    }
+                        100%{
+                            transform: translateX(0px);
+                             opacity: 1;
+
+                        }
+                   }
+                   @keyframes slideTop{
+                    0%{
+                          transform: translateY(-100px);
+                           opacity: 0;
+
+                    }
+                        100%{
+                            transform: translateY(0px);
+                             opacity: 1;
+
+                        }
+                   }
+                   @keyframes slideBottom{
+                    0%{
+                          transform: translateY(100px);
+                           opacity: 0;
+
+                    }
+                        100%{
+                            transform: translateY(0px);
+                             opacity: 1;
+
+                        }
+                   }
+                  
+                  
